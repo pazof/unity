@@ -34,6 +34,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <ProjectGuid>{EE1F752C-1FAB-41AD-AD63-857D0E62AB6B}</ProjectGuid>
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <MSBuildExtensionsPath32>/usr/lib/mono/xbuild</MSBuildExtensionsPath32>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,6 +67,10 @@
     <CodeAnalysisRuleSet>..\..\Unity.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <ItemGroup>
+  <PackageReference Include="Microsoft.UI.Xaml" Version="2.8.1"  />
+  <PackageReference Include="CommonServiceLocator" Version="2.0.6" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="ObjectBuilderCustomization\IRegisteredNamesPolicy.cs" />
     <Compile Include="ObjectBuilderCustomization\RegisteredNamesPolicy.cs" />
